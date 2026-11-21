@@ -35,6 +35,10 @@ public final class Tuning {
       "Fuel/SPIN_UP_FEEDER_VOLTAGE", FuelConstants.SPIN_UP_FEEDER_VOLTAGE);
   public static final TunableNumber SPIN_UP_SECONDS = new TunableNumber(
       "Fuel/SPIN_UP_SECONDS", FuelConstants.SPIN_UP_SECONDS);
+  public static final TunableNumber LAUNCH_POWER = new TunableNumber(
+      "Fuel/LAUNCH_POWER", FuelConstants.LAUNCH_POWER);
+  public static final TunableNumber INDEXER_SPEED = new TunableNumber(
+      "Fuel/INDEXER_SPEED", FuelConstants.INDEXER_SPEED);
 
   // Drive
   public static final TunableNumber DRIVE_SCALING = new TunableNumber(
@@ -47,7 +51,7 @@ public final class Tuning {
   private static final TunableNumber[] ALL = {
       INTAKING_FEEDER_VOLTAGE, INTAKING_INTAKE_VOLTAGE, LAUNCHING_FEEDER_VOLTAGE,
       LAUNCHING_LAUNCHER_VOLTAGE, SPIN_UP_FEEDER_VOLTAGE, SPIN_UP_SECONDS,
-      DRIVE_SCALING, ROTATION_SCALING, DRIVE_POWER };
+      DRIVE_SCALING, ROTATION_SCALING, DRIVE_POWER, LAUNCH_POWER, INDEXER_SPEED };
 
   /**
    * Fuerza a Java a crear (y publicar) todos los valores al arrancar el robot.
