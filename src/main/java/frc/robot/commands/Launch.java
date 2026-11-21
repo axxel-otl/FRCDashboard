@@ -5,6 +5,8 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.Constants;
+import frc.robot.Tuning;
 import frc.robot.subsystems.CANFuelSubsystem;
 import static frc.robot.Tuning.*;
 
@@ -26,8 +28,8 @@ public class Launch extends Command {
   // Voltages are read from Elastic (/Tuning/Fuel) on every loop
   @Override
   public void execute() {
-    fuelSubsystem.setIntakeLauncherRoller(LAUNCHING_LAUNCHER_VOLTAGE.get());
-    fuelSubsystem.setFeederRoller(LAUNCHING_FEEDER_VOLTAGE.get());
+    fuelSubsystem.setIntakeLauncherRoller(LAUNCHING_LAUNCHER_VOLTAGE.get() * frc.robot.Tuning.LAUNCH_POWER.get());
+    fuelSubsystem.setFeederRoller(LAUNCHING_FEEDER_VOLTAGE.get() * frc.robot.Tuning.INDEXER_SPEED.get());
   }
 
   // Called once the command ends or is interrupted. The rollers keep their last
