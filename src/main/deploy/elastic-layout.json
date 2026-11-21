@@ -1,5 +1,5 @@
 {
-  "version": 1.0,
+  "version": 1,
   "grid_size": 128,
   "tabs": [
     {
@@ -9,10 +9,10 @@
         "containers": [
           {
             "title": "Auto Chooser",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 0,
+            "width": 384,
+            "height": 128,
             "type": "ComboBox Chooser",
             "properties": {
               "topic": "/SmartDashboard/Auto Chooser",
@@ -22,10 +22,10 @@
           },
           {
             "title": "Reset Tuning",
-            "x": 512.0,
-            "y": 0.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 512,
+            "y": 0,
+            "width": 384,
+            "height": 128,
             "type": "Command",
             "properties": {
               "topic": "/SmartDashboard/Reset Tuning",
@@ -36,153 +36,187 @@
           },
           {
             "title": "INTAKING_FEEDER_VOLTAGE",
-            "x": 0.0,
-            "y": 128.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 128,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/INTAKING_FEEDER_VOLTAGE",
               "period": 0.06,
               "data_type": "double",
-              "min_value": -12.0,
-              "max_value": 12.0,
+              "min_value": -12,
+              "max_value": 12,
               "divisions": 9,
               "update_continuously": false
             }
           },
           {
             "title": "INTAKING_INTAKE_VOLTAGE",
-            "x": 0.0,
-            "y": 256.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 256,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/INTAKING_INTAKE_VOLTAGE",
               "period": 0.06,
               "data_type": "double",
-              "min_value": -12.0,
-              "max_value": 12.0,
+              "min_value": -12,
+              "max_value": 12,
               "divisions": 9,
               "update_continuously": false
             }
           },
           {
             "title": "LAUNCHING_FEEDER_VOLTAGE",
-            "x": 0.0,
-            "y": 384.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 384,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/LAUNCHING_FEEDER_VOLTAGE",
               "period": 0.06,
               "data_type": "double",
-              "min_value": -12.0,
-              "max_value": 12.0,
+              "min_value": -12,
+              "max_value": 12,
               "divisions": 9,
               "update_continuously": false
             }
           },
           {
             "title": "LAUNCHING_LAUNCHER_VOLTAGE",
-            "x": 0.0,
-            "y": 512.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 512,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/LAUNCHING_LAUNCHER_VOLTAGE",
               "period": 0.06,
               "data_type": "double",
-              "min_value": -12.0,
-              "max_value": 12.0,
+              "min_value": -12,
+              "max_value": 12,
               "divisions": 9,
               "update_continuously": false
             }
           },
           {
             "title": "SPIN_UP_FEEDER_VOLTAGE",
-            "x": 0.0,
-            "y": 640.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 0,
+            "y": 640,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/SPIN_UP_FEEDER_VOLTAGE",
               "period": 0.06,
               "data_type": "double",
-              "min_value": -12.0,
-              "max_value": 12.0,
+              "min_value": -12,
+              "max_value": 12,
               "divisions": 9,
               "update_continuously": false
             }
           },
           {
             "title": "SPIN_UP_SECONDS",
-            "x": 0.0,
-            "y": 768.0,
-            "width": 384.0,
-            "height": 128.0,
-          "type": "Number Slider",
+            "x": 0,
+            "y": 768,
+            "width": 384,
+            "height": 128,
+            "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Fuel/SPIN_UP_SECONDS",
               "period": 0.06,
               "data_type": "double",
-              "min_value": 0.0,
-              "max_value": 3.0,
+              "min_value": 0,
+              "max_value": 3,
               "divisions": 7,
               "update_continuously": false
             }
           },
           {
+            "title": "LAUNCH_POWER",
+            "x": 0,
+            "y": 896,
+            "width": 384,
+            "height": 128,
+            "type": "Number Slider",
+            "properties": {
+              "topic": "/Tuning/Fuel/LAUNCH_POWER",
+              "period": 0.06,
+              "data_type": "double",
+              "min_value": 0,
+              "max_value": 1,
+              "divisions": 11,
+              "update_continuously": false
+            }
+          },
+          {
+            "title": "INDEXER_SPEED",
+            "x": 0,
+            "y": 1024,
+            "width": 384,
+            "height": 128,
+            "type": "Number Slider",
+            "properties": {
+              "topic": "/Tuning/Fuel/INDEXER_SPEED",
+              "period": 0.06,
+              "data_type": "double",
+              "min_value": 0,
+              "max_value": 1,
+              "divisions": 11,
+              "update_continuously": false
+            }
+          },
+          {
             "title": "DRIVE_SCALING",
-            "x": 512.0,
-            "y": 128.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 512,
+            "y": 128,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Drive/DRIVE_SCALING",
               "period": 0.06,
               "data_type": "double",
-              "min_value": 0.0,
-              "max_value": 1.0,
+              "min_value": 0,
+              "max_value": 1,
               "divisions": 11,
               "update_continuously": false
             }
           },
           {
             "title": "ROTATION_SCALING",
-            "x": 512.0,
-            "y": 256.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 512,
+            "y": 256,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Drive/ROTATION_SCALING",
               "period": 0.06,
               "data_type": "double",
-              "min_value": 0.0,
-              "max_value": 1.0,
+              "min_value": 0,
+              "max_value": 1,
               "divisions": 11,
               "update_continuously": false
             }
           },
           {
             "title": "DRIVE_POWER",
-            "x": 512.0,
-            "y": 384.0,
-            "width": 384.0,
-            "height": 128.0,
+            "x": 512,
+            "y": 384,
+            "width": 384,
+            "height": 128,
             "type": "Number Slider",
             "properties": {
               "topic": "/Tuning/Drive/DRIVE_POWER",
               "period": 0.06,
               "data_type": "double",
-              "min_value": 0.0,
-              "max_value": 1.0,
+              "min_value": 0,
+              "max_value": 1,
               "divisions": 11,
               "update_continuously": false
             }

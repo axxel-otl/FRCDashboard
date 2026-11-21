@@ -27,8 +27,8 @@ public class SpinUp extends Command {
   // the launcher before it is at speed. Values come from Elastic.
   @Override
   public void execute() {
-    fuelSubsystem.setIntakeLauncherRoller(LAUNCHING_LAUNCHER_VOLTAGE.get());
-    fuelSubsystem.setFeederRoller(SPIN_UP_FEEDER_VOLTAGE.get());
+    fuelSubsystem.setIntakeLauncherRoller(LAUNCHING_LAUNCHER_VOLTAGE.get() * LAUNCH_POWER.get());
+    fuelSubsystem.setFeederRoller(SPIN_UP_FEEDER_VOLTAGE.get() * INDEXER_SPEED.get());
   }
 
   // Called once the command ends or is interrupted.

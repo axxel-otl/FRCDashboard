@@ -6,6 +6,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.CANFuelSubsystem;
+
 import static frc.robot.Tuning.*;
 
 /* You should consider using the more terse Command factories API instead https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html#defining-commands */
@@ -29,7 +30,7 @@ public class Intake extends Command {
   @Override
   public void execute() {
     fuelSubsystem.setIntakeLauncherRoller(INTAKING_INTAKE_VOLTAGE.get());
-    fuelSubsystem.setFeederRoller(INTAKING_FEEDER_VOLTAGE.get());
+    fuelSubsystem.setFeederRoller(INTAKING_FEEDER_VOLTAGE.get() * frc.robot.Tuning.INDEXER_SPEED.get());
   }
 
   // Called once the command ends or is interrupted. Stop the rollers

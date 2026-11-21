@@ -27,7 +27,7 @@ public class Eject extends Command {
   @Override
   public void execute() {
     fuelSubsystem.setIntakeLauncherRoller(-1 * INTAKING_INTAKE_VOLTAGE.get());
-    fuelSubsystem.setFeederRoller(-1 * INTAKING_FEEDER_VOLTAGE.get());
+    fuelSubsystem.setFeederRoller(-INTAKING_FEEDER_VOLTAGE.get() * frc.robot.Tuning.INDEXER_SPEED.get());
   }
 
   // Called once the command ends or is interrupted. Stop the rollers
